@@ -2,33 +2,20 @@
 set -e
 
 echo "🚀 Starting Teryx Panel installer By Lorinplayz..."
-  _      ____  _____  _____ _   _   _____  _           __     ________
- | |    / __ \|  __ \|_   _| \ | | |  __ \| |        /\\ \   / /___  /
- | |   | |  | | |__) | | | |  \| | | |__) | |       /  \\ \_/ /   / / 
- | |   | |  | |  _  /  | | | . ` | |  ___/| |      / /\ \\   /   / /  
- | |___| |__| | | \ \ _| |_| |\  | | |    | |____ / ____ \| |   / /__ 
- |______\____/|_|  \_\_____|_| \_| |_|    |______/_/    \_\_|  /_____|
-                                                                      
-
- 🤍 Framework Installer - github.com/Lorinplayz
-
 
 sudo apt update
 sudo apt install -y curl git unzip
 
-curl -fsSL https://deb.nodesource.com/setup_23.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt install -y nodejs
 
-cd /root || exit
 cd ~
-git clone https://github.com/teryxlabs/v4panel.git
-cd v4panel
+git clone https://github.com/Lorinplayz/YOUR-REPO.git panel || true
+cd panel
+
 npm install
-npm run seed
-npm run createUser
-node .
+npm run seed || true
+npm run createUser || true
 
 echo "✅ Installation complete"
-echo "➡️ Start panel using: node ."
-
-echo "Powered By Lorinplayz"
+echo "➡️ Start with: node ."

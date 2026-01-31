@@ -9,18 +9,12 @@ sudo apt update
 sudo apt-get install pufferpanel
 
 sudo pufferpanel user add
-
-
 apt update
 
 apt install sudo
 
 apt install systemctl
-
 apt upgrade
-
 curl -s https://packagecloud.io/install/repositories
 
-echo ""
-echo "✅ Installation complete"
-echo "➡️ Start with: node ."
+e"

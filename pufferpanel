@@ -4,14 +4,6 @@ set -e
 clear
 echo "🚀 Starting PufferPanel Panel installer By Lorinplayz..."
 echo ""
-  _      ____  _____  _____ _   _   _____  _           __     ________
- | |    / __ \|  __ \|_   _| \ | | |  __ \| |        /\\ \   / /___  /
- | |   | |  | | |__) | | | |  \| | | |__) | |       /  \\ \_/ /   / / 
- | |   | |  | |  _  /  | | | . ` | |  ___/| |      / /\ \\   /   / /  
- | |___| |__| | | \ \ _| |_| |\  | | |    | |____ / ____ \| |   / /__ 
- |______\____/|_|  \_\_____|_| \_| |_|    |______/_/    \_\_|  /_____|
-                                                                      
- 🤍 Framework Installer - github.com/Lorinplayz/
 
 sudo apt update
 sudo apt-get install pufferpanel

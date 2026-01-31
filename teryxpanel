@@ -16,6 +16,8 @@ cat <<'EOF'
  🤍 Framework Installer - github.com/Lorinplayz
 EOF
 
+sudo su
+
 git clone https://github.com/teryxlabs/v4panel
 
 curl -sL https://deb.nodesource.com/setup_23.x | sudo bash -

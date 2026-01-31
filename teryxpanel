@@ -16,19 +16,15 @@ cat <<'EOF'
  🤍 Framework Installer - github.com/Lorinplayz
 EOF
 
-sudo apt update
-sudo apt install -y curl git unzip
-
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
-sudo apt install -y nodejs
-
-cd ~
 git clone https://github.com/teryxlabs/v4panel
-cd panel
 
-npm install
-npm run seed || true
-npm run createUser || true
+curl -sL https://deb.nodesource.com/setup_23.x | sudo bash -
+
+apt-get install nodejs git
+
+cd v4panel
+apt install zip -y && unzip panel.zip
+npm install && npm run seed && npm run createUser
 
 echo ""
 echo "✅ Installation complete"

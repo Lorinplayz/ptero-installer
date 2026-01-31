@@ -1,18 +1,23 @@
 #!/bin/bash
-set -e
 
-clear
-echo "🚀 Starting PufferPanel Panel installer By Lorinplayz..."
-echo ""
+# Visual Flair
+echo "🚀 Starting My Custom PufferPanel Installer..."
 
-sudo apt update
-sudo apt-get install pufferpanel
+# Update System
+sudo apt update && sudo apt upgrade -y
 
+# Install PufferPanel Official Repo
+curl -s https://packagecloud.io/install/repositories/pufferpanel/pufferpanel/script.deb.sh | sudo bash
+
+# Install the Package
+sudo apt-get install pufferpanel -y
+
+# Start the Service
+sudo systemctl enable --now pufferpanel
+
+# Create Admin User
+echo "👤 Setting up Admin User..."
 sudo pufferpanel user add
-apt update
 
-apt install sudo
-
-apt install systemctl
-apt upgrade
-curl -s https://packagecloud.io/install/repositories
+echo "✅ Installation complete!"
+echo "➡️ Access the panel at http://$(hostname -I | awk '{print $1}'):8080"

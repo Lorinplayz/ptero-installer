@@ -1,7 +1,20 @@
 #!/bin/bash
 set -e
 
+clear
 echo "🚀 Starting Teryx Panel installer By Lorinplayz..."
+echo ""
+
+cat <<'EOF'
+  _      ____  _____  _____ _   _   _____  _           __     ________
+ | |    / __ \|  __ \|_   _| \ | | |  __ \| |        /\\ \   / /___  /
+ | |   | |  | | |__) | | | |  \| | | |__) | |       /  \\ \_/ /   / / 
+ | |   | |  | |  _  /  | | | . ` | |  ___/| |      / /\ \\   /   / /  
+ | |___| |__| | | \ \ _| |_| |\  | | |    | |____ / ____ \| |   / /__ 
+ |______\____/|_|  \_\_____|_| \_| |_|    |______/_/    \_\_|  /_____|
+                                                                      
+ 🤍 Framework Installer - github.com/Lorinplayz
+EOF
 
 sudo apt update
 sudo apt install -y curl git unzip
@@ -10,12 +23,13 @@ curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt install -y nodejs
 
 cd ~
-git clone https://github.com/Lorinplayz/YOUR-REPO.git panel || true
+git clone https://github.com/Lorinplayz/teryxpanel.git panel || true
 cd panel
 
 npm install
 npm run seed || true
 npm run createUser || true
 
+echo ""
 echo "✅ Installation complete"
 echo "➡️ Start with: node ."

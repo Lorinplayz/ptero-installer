@@ -15,7 +15,6 @@ cat <<'EOF'
                                                                       
  🤍 Framework Installer - github.com/Lorinplayz
 
-sudo su
 
 apt update
 

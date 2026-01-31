@@ -12,6 +12,7 @@ echo "🚀 Starting Teryx Panel installer By Lorinplayz..."
 
  🤍 Framework Installer - github.com/Lorinplayz
 
+
 sudo apt update
 sudo apt install -y curl git unzip
 
@@ -19,12 +20,13 @@ curl -fsSL https://deb.nodesource.com/setup_23.x | sudo -E bash -
 sudo apt install -y nodejs
 
 cd /root || exit
+cd ~
 git clone https://github.com/teryxlabs/v4panel.git
 cd v4panel
-
 npm install
 npm run seed
 npm run createUser
+node .
 
 echo "✅ Installation complete"
 echo "➡️ Start panel using: node ."

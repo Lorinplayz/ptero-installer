@@ -16,5 +16,3 @@ apt install sudo
 apt install systemctl
 apt upgrade
 curl -s https://packagecloud.io/install/repositories
-
-e"

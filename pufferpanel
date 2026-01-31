@@ -1,0 +1,37 @@
+#!/bin/bash
+set -e
+
+clear
+echo "🚀 Starting PufferPanel Panel installer By Lorinplayz..."
+echo ""
+
+cat <<'EOF'
+  _      ____  _____  _____ _   _   _____  _           __     ________
+ | |    / __ \|  __ \|_   _| \ | | |  __ \| |        /\\ \   / /___  /
+ | |   | |  | | |__) | | | |  \| | | |__) | |       /  \\ \_/ /   / / 
+ | |   | |  | |  _  /  | | | . ` | |  ___/| |      / /\ \\   /   / /  
+ | |___| |__| | | \ \ _| |_| |\  | | |    | |____ / ____ \| |   / /__ 
+ |______\____/|_|  \_\_____|_| \_| |_|    |______/_/    \_\_|  /_____|
+                                                                      
+ 🤍 Framework Installer - github.com/Lorinplayz
+EOF
+
+sudo su
+
+apt update
+
+apt install sudo
+
+apt install systemctl
+
+apt upgrade
+
+curl -s https://packagecloud.io/install/repositories/pufferpanel/pufferpanel/script.deb.sh?any=true | sudo bash
+sudo apt update
+sudo apt-get install pufferpanel
+
+sudo pufferpanel user add
+
+echo ""
+echo "✅ Installation complete"
+echo "➡️ Start with: node ."

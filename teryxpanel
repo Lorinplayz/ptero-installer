@@ -1,8 +1,23 @@
-sudo su
-git clone https://github.com/teryxlabs/v4panel
-curl -sL https://deb.nodesource.com/setup_23.x | sudo bash -
-apt-get install nodejs git
+#!/bin/bash
+set -e
+
+echo "🚀 Starting Teryx Panel installer By Lorinplayz..."
+
+sudo apt update
+sudo apt install -y curl git unzip
+
+curl -fsSL https://deb.nodesource.com/setup_23.x | sudo -E bash -
+sudo apt install -y nodejs
+
+cd /root || exit
+git clone https://github.com/teryxlabs/v4panel.git
 cd v4panel
-apt install zip -y && unzip panel.zip
-npm install && npm run seed && npm run createUser
-node .
+
+npm install
+npm run seed
+npm run createUser
+
+echo "✅ Installation complete"
+echo "➡️ Start panel using: node ."
+
+echo "Powered By Lorinplayz"

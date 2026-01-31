@@ -14,7 +14,6 @@ cat <<'EOF'
  |______\____/|_|  \_\_____|_| \_| |_|    |______/_/    \_\_|  /_____|
                                                                       
  🤍 Framework Installer - github.com/Lorinplayz
-EOF
 
 sudo su
 

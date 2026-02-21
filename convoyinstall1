@@ -1,0 +1,8 @@
+docker compose up -d
+
+docker compose down
+docker compose up -d --build
+docker compose exec workspace bash -c "php artisan optimize"
+docker compose restart
+
+docker compose exec workspace php artisan c:user:make

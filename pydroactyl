@@ -1,3 +1,13 @@
+#!/bin/bash
+
+  _      ____  _____  _____ _   _   _____  _           __     ________
+ | |    / __ \|  __ \|_   _| \ | | |  __ \| |        /\\ \   / /___  /
+ | |   | |  | | |__) | | | |  \| | | |__) | |       /  \\ \_/ /   / / 
+ | |   | |  | |  _  /  | | | . ` | |  ___/| |      / /\ \\   /   / /  
+ | |___| |__| | | \ \ _| |_| |\  | | |    | |____ / ____ \| |   / /__ 
+ |______\____/|_|  \_\_____|_| \_| |_|    |______/_/    \_\_|  /_____|
+            Pydroactyl Installer Made By: Lorinplayz.dev
+
 # Create directory and get compose file
 mkdir -p ~/pyrodactyl-panel && cd ~/pyrodactyl-panel
 curl -Lo docker-compose.yml https://raw.githubusercontent.com/pyrohost/pyrodactyl/main/docker-compose.example.yml

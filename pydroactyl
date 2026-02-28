@@ -1,0 +1,60 @@
+# Create directory and get compose file
+mkdir -p ~/pyrodactyl-panel && cd ~/pyrodactyl-panel
+curl -Lo docker-compose.yml https://raw.githubusercontent.com/pyrohost/pyrodactyl/main/docker-compose.example.yml
+
+# Edit the file - change passwords and APP_URL
+nano docker-compose.yml
+
+# Launch it
+docker compose up -d
+
+# Install Docker (if not already installed)
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+
+# Install Docker Compose
+sudo apt-get update
+sudo apt-get install -y docker-compose-plugin
+
+# Create directory and get compose file
+mkdir -p ~/pyrodactyl-panel && cd ~/pyrodactyl-panel
+
+# Download the compose file
+curl -Lo docker-compose.yml https://raw.githubusercontent.com/pyrohost/pyrodactyl/main/docker-compose.example.yml
+
+# Edit the file (change passwords and APP_URL)
+nano docker-compose.yml
+
+# Start the panel
+docker compose up -d
+
+# Wait 10 seconds for database to initialize
+sleep 10
+
+# Create admin user
+docker compose exec panel php artisan p:user:make
+
+# Check if it's running
+docker compose ps
+
+# Start Docker service
+sudo systemctl start docker
+
+# Enable Docker to start on boot
+sudo systemctl enable docker
+
+# Check status
+sudo systemctl status docker
+
+# Add your user to docker group (so you don't need sudo)
+sudo usermod -aG docker $USER
+
+# IMPORTANT: Log out and back in, or run this to apply group changes
+newgrp docker
+
+# Now try Docker commands
+docker ps
+
+cd ~/pyrodactyl-panel
+docker compose up -d
+docker compose ps

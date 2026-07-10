@@ -100,7 +100,7 @@ EOF
   echo -e "${N}"
 
   echo -e "${BC} ╔══════════════════════════════════════════════════════════╗${N}"
-  printf " ${BC}║${BW}%-58s${BC}║${N}\n" "$(get_title)"
+  printf " ${BC}║${BW}%-58s${BC}║${N}\n" "$Lorinplayz.dev | Control HUB"
   printf " ${BC}║${B}%-58s${BC}║${N}\n" "      Develop By Lorinplayz | All Theme       "
   echo -e "${BC} ╚══════════════════════════════════════════════════════════╝${N}"
 

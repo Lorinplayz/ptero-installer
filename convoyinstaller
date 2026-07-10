@@ -30,6 +30,13 @@ BM="\e[1;35m"; BC="\e[1;36m"; BW="\e[1;97m"
 trap 'echo -e "\n${R}[!] Force exit detected.${N}"; exit 1' SIGINT
 
 # ==========================================
+# 🔗 URL CONSTANTS
+# ==========================================
+URL_NOBITA="https://github.com/nobita329/Nobita-Cloud/raw/refs/heads/main/thame/UI"
+URL_FG="https://raw.githubusercontent.com/sdgamer8263-sketch/Theme/main/Fg"
+URL_EX="https://raw.githubusercontent.com/sdgamer8263-sketch/Theme/main/Ex"
+
+# ==========================================
 # 🧠 THEMES DATABASE (Merged Lists)
 # Format: "Display Name | Type | Payload"
 # Types: bp1 (Script 1 Blueprint), bp2 (Script 2 Blueprint), zip (Script 2 standard), script, submenu

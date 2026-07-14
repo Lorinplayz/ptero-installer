@@ -42,45 +42,7 @@ URL_EX="https://raw.githubusercontent.com/sdgamer8263-sketch/Theme/main/Ex"
 # Types: bp1 (Script 1 Blueprint), bp2 (Script 2 Blueprint), zip (Script 2 standard), script, submenu
 # ==========================================
 THEMES=(
-  # === Script 1 Themes (Duplicates use these definitions as requested) ===
-  "Euphoria Theme|bp1|euphoriatheme.blueprint"
-  "BetterAdmin|bp1|BetterAdmin.blueprint"
-  "Abyss Purple|bp1|abysspurple.blueprint"
-  "Abyss Amber|bp1|amberabyss.blueprint"
-  "Catppuccindactyl|bp1|catppuccindactyl.blueprint"
-  "Abyss Crimson|bp1|crimsonabyss.blueprint"
-  "Abyss Emerald|bp1|emeraldabyss.blueprint"
-  "NightAdmin|bp1|nightadmin.blueprint"
-  "Refresh Theme|bp1|refreshtheme.blueprint"
-  "Slice|bp1|slice.blueprint"
-  "Darkenate|bp1|darkenate.blueprint"
-  "Recolor|bp1|recolor.blueprint"
-  "BlueTables|bp1|bluetables.blueprint"
-  "UltraDarkAdmin|bp1|ultradarkadmin.blueprint"
-  "Xlpanel Theme|bp1|xlpaneltheme.blueprint"
-  "Lemem Theme|bp1|lememtheme.blueprint"
-  "Slate|bp1|slate.blueprint"
-  "KaelixPrime|bp1|kaelixprime.blueprint"
-  "M3dactyl|bp1|m3dactyl.blueprint"
-  
-  # === Script 2 Unique Themes & Exceptions ===
-  "Nebula Theme|submenu|nebula"
-  "Navy Seals|submenu|navy"
-  "Billing Theme|zip|${URL_FG}/billing.zip"
-  "Elysium Theme|zip|${URL_FG}/elysium.zip"
   "Enigma Theme|zip|${URL_FG}/enigma.zip"
-  "Frostcore Theme|zip|${URL_FG}/frostcore.zip"
-  "Hyper V2|script|https://raw.githubusercontent.com/sdgamer8263-sketch/Theme/main/hyperv1.s"
-  "IceMinecraft Theme|zip|${URL_FG}/iceMinecraft.zip"
-  "Lu Theme|bp2|${URL_EX}/lutheme.blueprint"
-  "Nightcore Theme|zip|${URL_FG}/nightcore.zip"
-  "Noobe Theme|zip|${URL_FG}/noobe.zip"
-  "Nook Theme|zip|${URL_FG}/nook.zip"
-  "Stellar Theme|zip|${URL_FG}/stellar.zip"
-  
-  # === Arix Theme (Explicit Addition) ===
-  "Arix Theme|script|https://license-verifier--sourabhsagu95.replit.app/api/install"
-
 )
 
 # ==========================================
